@@ -3,16 +3,18 @@
       <table class="table table-bordered table-striped">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
+            <th scope="col">Receita</th>
+            <th scope="col">Tempo preparo</th>
+            <th scope="col">Custo</th>
+            <th scope="col">Ingredientes</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let user of receitas">
-            <td>{{ user.id }}</td>
             <td>{{ user.nome }}</td>
-            <td><a href="mailto:{{ user.ingredientes }}">{{ user.ingredientes }}</a></td>
+            <td>{{ user.tempoPreparo }}</td>
+            <td>{{ user.custoAproximado }}</td>
+            <td>{{ user.ingredientes }} </td>
           </tr>
         </tbody>
       </table>

@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { Receita } from '../receita/receita';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ReceitaService } from '../receita/receita.service';
-import { ReceitaDTO } from '../receita/receita-dto';
+import { ReceitaDTO } from '../receita/dto/receita-dto';
 
 @Component({
   selector: 'app-receita-form',
@@ -21,10 +20,10 @@ export class ReceitaFormComponent {
   }
 
   onSubmit(){
-    this.receitaService.save(this.receita).subscribe(result=>this.gotoReceitaList())
+    this.receitaService.saveReceita(this.receita).subscribe(result=>this.gotoReceitaList())
   }
 
   gotoReceitaList(){
-    this.router.navigate(['/view-receitas'])
+    this.router.navigate(['/receitas'])
   }
 }

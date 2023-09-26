@@ -12,6 +12,7 @@ import { ReceitaFormComponent } from './receita-form/receita-form.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ReceitaService } from './receita/receita.service';
+import { IngredienteFormComponent } from './ingrediente-form/ingrediente-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReceitaService } from './receita/receita.service';
     HeaderComponent,
     FooterComponent,
     ListaReceitaComponent,
-    ReceitaFormComponent
+    ReceitaFormComponent,
+    IngredienteFormComponent
   ],
   imports: [
     BrowserModule,

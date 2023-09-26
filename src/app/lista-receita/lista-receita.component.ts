@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Receita } from '../receita/receita';
 import { ReceitaService } from '../receita/receita.service';
+import { Receita } from '../receita/dto/receita';
 
 @Component({
   selector: 'app-lista-receita',

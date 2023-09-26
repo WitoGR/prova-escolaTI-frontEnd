@@ -1,0 +1,3 @@
+Criar componente : ng generate component nome-do-componente
+Criar service : ng generate service nome-do-servico
+Criar classe : ng generate class nome-da-classe
