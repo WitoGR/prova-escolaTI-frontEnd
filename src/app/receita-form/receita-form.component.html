@@ -1,0 +1,39 @@
+<div class="card my-5">
+    <div class="card-body">
+      <form (ngSubmit)="onSubmit()" #userForm="ngForm">
+
+        <div class="form-group">
+          <label for="Nome">Nome</label>
+          <input type="text" [(ngModel)]="receita.nome" 
+            class="form-control" 
+            id="Nome" 
+            name="Nome" 
+            placeholder="Digite o nome da receita"
+            required #name="ngModel">
+        </div>
+
+        <div class="form-group">
+          <label for="tempoPreparo">Tempo Preparo</label>
+          <input type="text" [(ngModel)]="receita.tempoPreparo" 
+            class="form-control" 
+            id="tempoPreparo" 
+            name="tempoPreparo" 
+            placeholder="Digite o tempo de preparo da receita"
+            required #tempoPreparo="ngModel">
+        </div>
+
+        <div class="form-group">
+            <label for="custoAproximado">Tempo Preparo</label>
+            <input type="text" [(ngModel)]="receita.custoAproximado" 
+              class="form-control" 
+              id="custoAproximado" 
+              name="custoAproximado" 
+              placeholder="Digite o custo aproximado da receita"
+              required #custoAproximado="ngModel">
+          </div>
+
+        <button type="submit" [disabled]="!userForm.form.valid" 
+          class="btn btn-info">Submit</button>
+      </form>
+    </div>
+  </div>

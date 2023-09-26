@@ -1,3 +1,20 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card bg-dark my-5">
+          <div class="card-body">
+            <h2 class="card-title text-center text-white py-3">{{ title }}</h2>
+            <ul class="text-center list-inline py-3">
+              <li class="list-inline-item">
+                <a routerLink="/receitas" class="btn btn-info">Listar receitas</a>
+                  </li>
+              <li class="list-inline-item">
+                <a routerLink="/add-receita" class="btn btn-info">Add receita</a>
+                  </li>
+            </ul>
+          </div>
+        </div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>

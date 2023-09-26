@@ -7,20 +7,30 @@ import { HomeComponent } from './views/home/home.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListaReceitaComponent } from './lista-receita/lista-receita.component';
+import { ReceitaFormComponent } from './receita-form/receita-form.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ReceitaService } from './receita/receita.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ListaReceitaComponent,
+    ReceitaFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    BrowserModule,
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [ReceitaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
