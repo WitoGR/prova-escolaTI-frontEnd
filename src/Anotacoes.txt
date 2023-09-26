@@ -1,3 +1,5 @@
 Criar componente : ng generate component nome-do-componente
 Criar service : ng generate service nome-do-servico
 Criar classe : ng generate class nome-da-classe
+
+Link usado pra conectar front com back: https://www.baeldung.com/spring-boot-angular-web
